@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel= "stylesheet" href= "style.css" type= "text/css">
+<title>Heat Lightning</title>
+</head>
+<body>
+
+<div>
+	<video autoplay loop class="myVideo" muted>
+  		<source src="Pictures/CloudsBG.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+</div>
+<h1 class="heading">LAUREL HELL</h1>
+<div class="song">
+	<h2 class="heading2">Heat Lightning</h2>
+<pre>
+	Heat lightning
+	Running outside the window
+	I've laid awake since one
+	And now it's four o'clock
+	Though I've held on
+	Can't carry it much longer
+	On the ceiling dancing
+	Are the things all come and gone
+
+	And there's nothing I can do
+	Not much I can change
+	So, I give it up to you
+	I hope that's okay
+	There's nothing I can do
+	Not much I can change
+	I give it up to you, I surrender
+
+	Heat lightning
+	Watch it from my doorstep
+	Sleeping eyelid of the sky
+	Flutters in a dream
+	Well, I've held on
+	But feel a storm approaching
+	Trees are swaying in the wind like sea anemones
+
+	And there's nothing I can do
+	Not much I can change
+	Can I give it up to you?
+	Would that be okay?
+	There's nothing I can do
+	Not much I can change
+	I give it up to you, I surrender
+
+	There's nothing I can do
+	Not much I can change
+	I give it up to you, I surrender
+</pre>
+</div>
+<div class="musicControls">
+	<audio controls>
+  <source src="Heat Lightning.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+
+    <div class="mydiv">
+      <div class="mydivheader"> <img src="Pictures/sea.png"> </div>
+    </div>
+    <div class="mydiv">
+      <div class="mydivheader"> <img width="auto" height="300px" src="Pictures/bunny.png"> </div>
+    </div>
+    <div class="mydiv">
+      <div class="mydivheader"> <img src="Pictures/sea2.png"> </div>
+    </div>
+    <div class="mydiv">
+      <div class="mydivheader"> <img src="Pictures/sea3.png"> </div>
+    </div>
+
+    <div class="mydiv">
+      <div class="mydivheader"> <img src="Pictures/sea5.png"> </div>
+    </div>
+
+    <script>
+      //Make the DIV element draggagle:
+      var offset = 5;
+      var mydivs = document.getElementsByClassName("mydiv");
+      for (var i = 0; i < mydivs.length; i++) {
+        dragElement(mydivs[i]);
+        mydivs[i].style.left = offset + "px";
+        offset = offset + mydivs[i].offsetWidth + 5;
+      }
+
+      function dragElement(elmnt) {
+        var pos1 = 0,
+          pos2 = 0,
+          pos3 = 0,
+          pos4 = 0;
+        if (elmnt.getElementsByClassName("mydivheader")[0]) {
+          /* if present, the header is where you move the DIV from:*/
+          elmnt.getElementsByClassName(
+            "mydivheader"
+          )[0].onmousedown = dragMouseDown;
+        } else {
+          /* otherwise, move the DIV from anywhere inside the DIV:*/
+          elmnt.onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+          e = e || window.event;
+          e.preventDefault();
+          // get the mouse cursor position at startup:
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+          document.onmouseup = closeDragElement;
+          // call a function whenever the cursor moves:
+          document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+          e = e || window.event;
+          e.preventDefault();
+          // calculate the new cursor position:
+          pos1 = pos3 - e.clientX;
+          pos2 = pos4 - e.clientY;
+          pos3 = e.clientX;
+          pos4 = e.clientY;
+          // set the element's new position:
+          elmnt.style.top = elmnt.offsetTop - pos2 + "px";
+          elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
+        }
+
+        function closeDragElement() {
+          /* stop moving when mouse button is released:*/
+          document.onmouseup = null;
+          document.onmousemove = null;
+        }
+      }
+    </script>
+</body>
+</html>

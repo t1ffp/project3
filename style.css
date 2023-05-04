@@ -1,0 +1,206 @@
+a{
+  text-decoration:none;
+  color:#a83232;
+  text-shadow: 0 0 10px , 0 0 30px, 0 0 60px , 0 0 70px;
+}
+
+a:hover{
+  transform:scale(1.1);
+}
+
+body {
+  cursor:url('Pictures/knife2.png'), auto;
+} 
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.about{
+  font-family: Special Elite;
+  font-size: 50px;
+  color: #f7ebe4;
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  top: -320px;
+  left: -580px;
+}
+
+.about:hover{
+  transform:scale(1.1);
+}
+
+.mitski{
+  position: relative;
+  width: 450px;
+  height: auto;
+  border: 5px solid #ffff;
+  z-index: 1000;
+  left: 500px;
+}
+
+.bio{
+font-size: 20px;
+position: absolute;
+text-align: center;
+align-items: center;
+word-wrap: break-word;
+background: whitesmoke;
+left: 400px;
+}
+
+@font-face{
+   font-family:IM Fell English SC; 
+   src: url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+ }
+
+.myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.cover{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: auto;
+  border: 5px solid #ffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=IM+Fell+English+SC&display=swap');
+
+.Title{ 
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #a83232;
+  font-size: 96px;
+  top: 150px;
+}
+
+.ASCII{
+  position: fixed;
+  text-shadow: 0 0 20px , 0 0 40px, 0 0 80px , 0 0 100px;
+  top: 200px;
+}
+
+.heading{
+  position: relative;
+  display: flex;
+  color:#a83232;
+  font-family: Special Elite;
+  align-items:  center;
+  justify-content: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  top: -280px;
+  font-size: 80px;
+  text-shadow: 0 0 20px , 0 0 40px, 0 0 80px , 0 0 100px;
+  z-index: 1000;
+}
+
+.arch{
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 550px;
+  top: 100px;
+  right: -10px;
+}
+
+.arch:hover{
+  transform:scale(1.1);
+}
+
+.knife{
+  position: absolute;
+  bottom: -700px;
+  z-index: -1000;
+}
+
+.flower2{
+  position: absolute;
+  z-index: -1000;
+  right: 400px;
+}
+
+.flower3{
+  position: fixed;
+  z-index: -999;
+  right: 300px;
+  top: 200px;
+}
+
+.heading2{
+  position: relative;
+  font-family: Special Elite;
+  z-index: 1000;
+  font-size: 30px;
+  color: #ffff;
+  top: -100px;
+  right: -125px;
+}
+
+.musicControls{
+  position: relative;
+  top: -490px;
+  right: -520px;
+  z-index: 1000;
+}
+
+.song{
+  color: whitesmoke;
+  font-size: 15px;
+  position: absolute;
+  item-align: center;
+  line-height: 30px;
+  top: 250px;
+  right: 550px;
+}
+
+.gate{
+  position: fixed;
+  color: #a83232;
+  font-family: IM Fell English SC;
+  font-size: 20px;
+  text-shadow: 0 0 20px , 0 0 40px, 0 0 80px , 0 0 100px;
+  bottom: 150px;
+  right: 140px;
+  line-height: 50px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+div{
+  white-space: normal;
+}
+
+.mydiv{
+  position: absolute;
+  flex: none;
+}
+
+.mydivheader{
+  cursor: move;
+}
